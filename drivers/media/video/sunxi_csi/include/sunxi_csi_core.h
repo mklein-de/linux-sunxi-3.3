@@ -492,8 +492,8 @@ extern void bsp_csi_open(void);
 extern void bsp_csi_close(void);
 extern void bsp_csi_if_configure(__csi_if_conf_t *csi_if_cfg);
 extern void bsp_csi_fmt_configure(unsigned int ch, __csi_fmt_conf_t *csi_fmt_cfg);
-extern void inline bsp_csi_set_buffer_address(unsigned int ch, __csi_buf_t buf, unsigned int addr);
-extern unsigned int inline bsp_csi_get_buffer_address(unsigned int ch, __csi_buf_t buf);
+extern void bsp_csi_set_buffer_address(unsigned int ch, __csi_buf_t buf, unsigned int addr);
+extern unsigned int bsp_csi_get_buffer_address(unsigned int ch, __csi_buf_t buf);
 extern void bsp_csi_capture_video_start(unsigned int ch);
 extern void bsp_csi_capture_video_stop(unsigned int ch);
 extern void bsp_csi_capture_picture(unsigned int ch);
@@ -502,7 +502,7 @@ extern void bsp_csi_set_size(unsigned int ch, unsigned int length_h, unsigned in
 extern void bsp_csi_set_offset(unsigned int ch, unsigned int start_h, unsigned int start_v);
 extern void bsp_csi_int_enable(unsigned int ch, __csi_int_t interrupt);
 extern void bsp_csi_int_disable(unsigned int ch, __csi_int_t interrupt);
-extern void inline bsp_csi_int_get_status(unsigned int ch, __csi_int_status_t * status);
-extern void inline bsp_csi_int_clear_status(unsigned int ch, __csi_int_t interrupt);
+extern void bsp_csi_int_get_status(unsigned int ch, __csi_int_status_t * status);
+extern void bsp_csi_int_clear_status(unsigned int ch, __csi_int_t interrupt);
 
 #endif  /* _CSI_H_ */
